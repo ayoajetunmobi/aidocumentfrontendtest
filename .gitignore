@@ -1,0 +1,8 @@
+app/reports
+app/charts
+app/collaborative.tsx
+app/login.tsx
+app/profile.tsx
+app/useSyncstore.js
+node_modules
+.next

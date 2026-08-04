@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 7px;
+  aspect-ratio: 1;
+  border: 12px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border-radius: 50%;
+  border: 15px solid #514b82;
+  animation: l18 2s infinite linear;
+}
+
+@keyframes l18 {
+  0%   {clip-path:polygon(50% 50%,0 0,0    0,0    0   ,0    0   ,0    0   )}
+  25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0   ,100% 0   ,100% 0   )}
+  50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+  75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
+  100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
+}
+
+.corasel-con{
+  -webkit-mask-image: linear-gradient(to right,transparent,black 10%,black 90%,transparent);
+  mask-image: linear-gradient(to right,transparent,black 10%,black 90%,transparent);
+}
+
+.courasel{
+  animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+  0%{
+    transform :translateX(0);
+  }
+  100%{
+    transform: translateX(-45%);
+  }
+}
+
+css/* Container for the table */
+table {
+    border-collapse: collapse; /* Merges borders for a clean look */
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Adds subtle depth */
+    border-radius: 5px 5px 0 0;
+    overflow: hidden; /* Ensures border-radius is visible */
+}
+
+/* Header styling */
+thead tr {
+    background-color: #009879; /* Use a sophisticated brand color */
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Cell padding and alignment */
+th,
+td {
+    padding: 12px 15px; /* Tables love space */
+}
+
+/* Row dividers and zebra striping */
+tbody tr {
+    border-bottom: 1px solid #dddddd; /* Thin horizontal lines */
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3; /* Zebra stripes for readability */
+}
+
+/* Highlight the last row */
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Hover effect for interactivity */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Subtle highlight on hover */
+}
+
+.faq-item.active .faq-answer {
+  transition: 0.5s ease-in;
+  height: fit-content;
+}
+
+.faq-item.active .icon {
+  transition: 0.5s ease-in;
+  transform: rotate(45deg);
+}
+
+/* connected list css  */
+
+/* Container reset and layout */
+.connected-list {
+  list-style: none; /* Hide default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual list items */
+.connected-list li {
+  position: relative; /* Anchor for absolute pseudo-elements */
+  padding-left: 30px; /* Make room for custom line and bullet */
+  padding-bottom: 9px; /* Space between the listed events */
+}
+
+/* Continuous connecting line */
+.connected-list li::before {
+  content: '⚡';
+  position: absolute;
+  left: 6px; /* Centered perfectly behind the bullet */
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Line thickness */
+  background-color: #000000; /* Light gray line color */
+}
+
+/* Override line on the very last item so it doesn't leak out */
+.connected-list li:last-child::before {
+  bottom: auto;
+  height: 12px; /* Stop the line directly at the last bullet */
+}
+
+/* Custom bullet points */
+.connected-list li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px; /* Align bullet horizontally with first line of text */
+  width: 14px; /* Bullet width */
+  height: 14px; /* Bullet height */
+  border-radius: 50%; /* Make bullet circular */
+  background-color: #df950c; /* Modern blue bullet color */
+  border: 2px solid #e2e5e6; /* White ring to separate from line */
+}
