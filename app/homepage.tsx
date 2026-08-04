@@ -142,11 +142,11 @@ export function HOMEPAGE(){
                             GET ALL YOUR →
                         </p>
                         <p ref={headerRef}
-                            className={`${wendyOne.className} -mt-3 md:-mt-9 text-nowrap text-3xl md:text-[5rem] lg:font-bold bg-linear-to-bl from-purple-700 to-green-500 bg-clip-text text-transparent transition-all duration-1000 ease-in
+                            className={`${wendyOne.className} -mt-3 md:-mt-9 text-nowrap text-2xl md:text-[5rem] lg:font-bold bg-linear-to-bl from-purple-700 to-green-500 bg-clip-text text-transparent transition-all duration-1000 ease-in
                             ${isHeaderVisible? "ml-0" : "-ml-500"}`}> 
                             PAPER WORK DONE
                         </p>
-                        <p className="text-2xl md:text-[3rem] text-center font-extrabold text-black"> IN ONE PLACE </p>
+                        <p className="text-[1.2rem] md:text-[3rem] text-center font-extrabold text-black"> IN ONE PLACE </p>
                         <p className="text-sm mt-5 tracking-wide text-shadow-2xs"> get tools that help you automate your workflow, these includes working with documents, reundant emails, HR forms and surveys</p>
                         <div className="flex justify-center bg-green-400 border border-white hover:bg-orange-500 w-full p-2 mt-5 rounded-md">
                             <button className="text-white tracking-widest w-fit"> Get Started ↵ </button>
