@@ -189,7 +189,7 @@ export function HOMEPAGE(){
                     <p className="w-28 text-white text-2xl font-bold "> Workflow in one place </p>
                     <p className="text-sm tracking-wide font-normal mt-4 w-28"> get all your office work done with a single app that uses AI to automate and simpify workflow, you can easily generate documents, analyse existing document and much more </p>
                 </div>
-                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-2 md:left-110 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
+                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-8 md:left-110 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
                     <FontAwesomeIcon className="border text-[1.3rem] p-2 rounded-[40px]"
                       icon={faGripHorizontal} >
                     </FontAwesomeIcon>
