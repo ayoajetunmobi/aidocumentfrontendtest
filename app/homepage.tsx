@@ -168,12 +168,12 @@ export function HOMEPAGE(){
                                 </div>
                             </div>
                         </div>
-                        <div className="">
+                        <div className="flex justify-center mt-4">
                             <Image
                                 src={"/anime.gif"}
                                 alt=""
-                                width={"100"}
-                                height={"100"}
+                                width={"150"}
+                                height={"150"}
                                 loading="eager"
                                 unoptimized>
                             </Image>
