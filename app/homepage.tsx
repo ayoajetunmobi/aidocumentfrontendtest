@@ -345,7 +345,7 @@ export function HOMEPAGE(){
                 </Image>
                 <div className="lg:ml-50 lg:mt-20 mt-10">
                     <div className="flex gap-2">
-                        <p ref={headerRef3} className={`text-3xl h-15 overflow-hidden font-bold transition-all duration-1000 ease-in ${isHeaderVisible3? "mt-0": "-mt-20"}`}> PATNER WITH US </p>     
+                        <p ref={headerRef3} className={`text-3xl h-18 overflow-hidden font-bold transition-all duration-1000 ease-in ${isHeaderVisible3? "mt-0": "-mt-20"}`}> PATNER WITH US </p>     
                     </div>
                     <p className="w-full lg:w-100 mt-3 text-sm"> We are open to intellectual and financial partnership, to be part of this innovation, contact us today </p>
                     <button className="flex gap-2 p-2 bg-amber-700 pt-2 rounded-2xl text-white font-bold border-2 border-gray-800">
