@@ -181,7 +181,7 @@ export function HOMEPAGE(){
                     </div>
                 </div>
             </div>
-            <div className="bg-amber-200 h-135 w-full p-2 lg:p-10  lg:block">
+            <div className="bg-amber-200 h-135 w-full p-10  lg:block">
                 <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-1 lg:left-70 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
                     <FontAwesomeIcon className="border text-[1.3rem] p-2 rounded-[40px]"
                        icon={faNetworkWired}>
