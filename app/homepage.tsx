@@ -136,7 +136,7 @@ export function HOMEPAGE(){
             {/* END OF HEADER START OF INTRO */}
             <div className="h-fit w-full bg-linear-to-br from-white to-amber-200 mt-10">
                 <div className="flex justify-center z-5 p-[20px 20px 0px 20px]">
-                    <div className="pt-12 pl-10 pr-10">
+                    <div className="pt-12 pl-4 pr-4 md:pl-10 md:pr-10">
                          <p ref={headerRef} className={`${wendyOne.className} text-3xl md:text-[6rem] lg:font-bold bg-linear-to-bl from-purple-700 to-green-500 bg-clip-text text-transparent transition-all duration-500 ease-in
                             ${isHeaderVisible? "ml-0" : "-ml-500"}`}> 
                             GET ALL YOUR →
