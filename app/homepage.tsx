@@ -181,29 +181,29 @@ export function HOMEPAGE(){
                     </div>
                 </div>
             </div>
-            <div className="bg-amber-200 h-135 w-full lg:h-135 p-2 lg:p-10  lg:block">
-                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-1 md:left-70 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
+            <div className="bg-amber-200 h-135 w-full p-2 lg:p-10  lg:block">
+                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-1 lg:left-70 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
                     <FontAwesomeIcon className="border text-[1.3rem] p-2 rounded-[40px]"
                        icon={faNetworkWired}>
                     </FontAwesomeIcon>
                     <p className="w-28 text-white text-2xl font-bold "> Workflow in one place </p>
                     <p className="text-sm tracking-wide font-normal mt-4 w-28"> get all your office work done with a single app that uses AI to automate and simpify workflow, you can easily generate documents, analyse existing document and much more </p>
                 </div>
-                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-8 md:left-110 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
+                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-8 lg:left-110 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
                     <FontAwesomeIcon className="border text-[1.3rem] p-2 rounded-[40px]"
                       icon={faGripHorizontal} >
                     </FontAwesomeIcon>
                     <p className="w-28 text-white text-2xl font-bold ">Advanced Analytics</p>
                     <p className="text-sm tracking-wide font-normal mt-4 w-28">get advanced data analysis to discover key KPI from your data with just prompting our model, you can even go ahead and create advanced dashboards</p>
                 </div> 
-                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-15 md:left-150 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
+                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-15 lg:left-150 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
                     <FontAwesomeIcon className="border text-[1.3rem] p-2 rounded-[40px]"
                       icon={faPlaneCircleExclamation}>
                     </FontAwesomeIcon>
                     <p className="w-28 text-white text-2xl font-bold ">Automate your workflow</p>
                     <p className="text-sm tracking-wide font-normal mt-4 w-28">we help you automate certain workflow like reading through  thousand of irrelevant emails or even reading all survey response gotten from your forms</p>
                 </div> 
-                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-22 md:left-190 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
+                <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-22 lg:left-190 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>
                     <FontAwesomeIcon className="border text-[1.3rem] p-2 rounded-[40px]"
                       icon={faMasksTheater}>
                     </FontAwesomeIcon>
