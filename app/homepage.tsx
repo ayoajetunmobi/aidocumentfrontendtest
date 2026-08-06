@@ -1,4 +1,4 @@
-no"use client"
+"use client"
 import Image from "next/image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCircleCheck, faGripHorizontal, faGripLines, faLineChart, faLinesLeaning, faList, faListNumeric, faListOl, faMasksTheater, faMessage, faNetworkWired, faPlaneCircleExclamation, faX } from "@fortawesome/free-solid-svg-icons";
@@ -349,7 +349,7 @@ export function HOMEPAGE(){
                     </div>
                 </div>
             </div>
-            <div className="p-5 block md:flex justify-center md:overflow-x-auto border-b mb-2">
+            <div className="p-1 md:p-15 block md:flex justify-center md:overflow-x-auto border-b mb-2">
                 <ReviewCard review={rev} />
                 <ReviewCard review={rev} />
                 <ReviewCard review={rev} />
