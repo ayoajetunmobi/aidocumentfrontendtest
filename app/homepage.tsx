@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCircleCheck, faGripHorizontal, faGripLines, faLineChart, faLinesLeaning, faList, faListNumeric, faListOl, faMasksTheater, faMessage, faNetworkWired, faPlaneCircleExclamation, faX } from "@fortawesome/free-solid-svg-icons";
 import { RefObject, useEffect } from "react";
 import { useIntersectionObserver } from "./intersectionObs"
+import { ReviewCard } from "./review"
 import { Wendy_One } from 'next/font/google';
 
 const wendyOne = Wendy_One({
@@ -74,6 +75,18 @@ export function HOMEPAGE(){
 
             
         }
+    }
+
+    const rev= {
+        id: "1",
+        author: "javovic",
+        avatarUrl: "/logo1.png",
+        rating: 4,
+        date: "",
+        title: "I Love this Platform",
+        content: "they really helped me simplify my workflow, I love this platform and cant get enough of it",
+        verified: true,
+        helpfulCount: 3,
     }
 
     useEffect(()=>{
@@ -336,6 +349,12 @@ export function HOMEPAGE(){
                     </div>
                 </div>
             </div>
+            <div className="p-15 block md:flex overflow-x-auto">
+                <ReviewCard review={rev} />
+                <ReviewCard review={rev} />
+                <ReviewCard review={rev} />
+       
+            </div>
             <div className="p-10 h-fit flex flex-wrap">
                 <Image
                     src={"/partners.png"}
@@ -359,6 +378,8 @@ export function HOMEPAGE(){
                     </button>
                 </div>
             </div>
+
+            
             <div className="p-10 h-fit bg-black">
                 <div className="flex w-10">
                     <span>🍇</span>
