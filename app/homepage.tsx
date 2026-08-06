@@ -349,7 +349,7 @@ export function HOMEPAGE(){
                     </div>
                 </div>
             </div>
-            <div className="p-15 block md:flex overflow-x-auto">
+            <div className="p-15 block md:flex justify-center md:overflow-x-auto border-b mb-2">
                 <ReviewCard review={rev} />
                 <ReviewCard review={rev} />
                 <ReviewCard review={rev} />
