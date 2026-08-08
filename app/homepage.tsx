@@ -338,7 +338,7 @@ export function HOMEPAGE(){
                     width={500}>
                 </Image>
             </div>
-            <div  className="h-fit bg-amber-200 p-20">
+            <div  className="h-fit bg-amber-200 p-4 md:p-20">
                 <p className="text-2xl lg:text-3xl text-left text-white pb-5 font-bold"> FREQUENTLY ASKED <span className="text-green-500">QUESTIONS</span> </p>
                 <div className="faq-section w-full">
                     <div className="faq-item border border-black rounded-[15px] mb-2">
@@ -355,7 +355,7 @@ export function HOMEPAGE(){
                     </div>
                 </div>
             </div>
-            <div className="p-15 block md:flex overflow-x-auto">
+            <div className="p-1 md:p-15 block md:flex justify-center md:overflow-x-auto border-b mb-2">
                 <ReviewCard review={rev} />
                 <ReviewCard review={rev} />
                 <ReviewCard review={rev} />

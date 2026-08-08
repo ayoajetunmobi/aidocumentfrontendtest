@@ -31,7 +31,7 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({ review, onHelpfulClick }
   };
 
   return (
-    <div className="bg-white border border-slate-100 rounded-2xl m-2 w-90 p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
+    <div className="bg-white border border-slate-100 rounded-2xl m-2 w-70 lg:w-90 p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
       <div className="flex items-start justify-between gap-4 mb-3">
         <div className="flex items-center gap-3">
           {review.avatarUrl ? (
