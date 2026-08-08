@@ -57,10 +57,10 @@ export function Login() {
 
     return (
         <div className="absolute w-full min-h-screen overflow-hidden justify-center bg-orange-50 p-4">
-            <div className="absolute top-0 left-0-translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/30 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute top-0 left-0-translate-x-1/2 -translate-y-1/2 w-70 h-56 bg-indigo-500/30 rounded-full blur-3xl pointer-events-none"></div>
             {/*  form */}
             <div className='flex justify-center'>
-                <div className="flex justify-evenly pt-5 w-[90%] md:w-[85%] h-fit bg-white dark:bg-zinc-900 shadow-xl rounded-2xl overflow-hidden border border-slate-200 dark:border-zinc-800 transition-all duration-300">
+                <div className="flex justify-evenly p-5 md:pt-5 w-[98%] md:w-[85%] h-fit bg-white dark:bg-zinc-900 shadow-xl rounded-2xl overflow-hidden border border-slate-200 dark:border-zinc-800 transition-all duration-300">
                     <div className='hidden md:block -ml-11 mt-5.5 w-[50%] justify-start  dark:bg-zinc-900 shadow-xl border border-slate-300 h-[80vh] rounded-2xl overflow-hidden'>
                         <div className="sliderLog">
                             <div className="slide-track flex">

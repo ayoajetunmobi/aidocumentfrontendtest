@@ -152,7 +152,7 @@ export function HOMEPAGE(){
 
             {/* END OF HEADER START OF INTRO */}
             <div className="h-fit w-full mt-10">
-                <div className="absolute top-0 left-0-translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/30 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute top-0 left-0-translate-x-1/2 -translate-y-1/2 w-70 h-56 bg-indigo-500/30 rounded-full blur-3xl pointer-events-none"></div>
                 <div className="flex justify-center z-5 p-[20px 20px 0px 20px]">
                     <div className="text-center pt-12 pl-4 pr-4 md:pl-10 md:pr-10">
                          <p ref={headerRef} className={`${wendyOne.className} text-center text-2xl md:text-[5rem] lg:font-bold bg-linear-to-bl from-purple-700 to-green-500 bg-clip-text text-transparent transition-all duration-500 ease-in
