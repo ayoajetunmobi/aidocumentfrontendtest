@@ -6,6 +6,7 @@ import { RefObject, useEffect } from "react";
 import { useIntersectionObserver } from "./intersectionObs"
 import { ReviewCard } from "./review"
 import { Wendy_One } from 'next/font/google';
+import Link from "next/link";
 
 const wendyOne = Wendy_One({
   weight: '400',       // Wendy One only supports regular (400) weight
@@ -129,25 +130,29 @@ export function HOMEPAGE(){
     return (
         <div>
             <div className="h-13 fixed top-0 w-full bg-amber-200 p-2 flex border-b z-10">
-                <div className="flex">
-                    <span>🍇</span>
-                    <span className="text-blue-600 font-bold text-3xl flex-1"> In </span>
-                    <span className="text-white text-3xl font-bold"> Docs </span>
-                </div>
+                <Link href={"/"}>
+                    <div className="flex">
+                        <span>🍇</span>
+                        <span className="text-blue-600 font-bold text-3xl flex-1"> In </span>
+                        <span className="text-white text-3xl font-bold"> Docs </span>
+                    </div>
+                </Link>
                 <div className="block lg:hidden w-full absolute left-[76%] text-3xl mr-50">
                     <button id="open" className="w-10 h-10 overflow-hidden absolute cursor-pointer"> <FontAwesomeIcon className="w-full h-full" icon={faBars}/></button>
                     <button id="close" className="w-10 h-10 absolute cursor-pointer text-[1.5rem] hidden"> <FontAwesomeIcon className="w-full h-full" icon={faX}/></button>
                 </div>
+
                 <div className="hidden lg:flex w-full justify-end text-3xl mr-50">
-                    <button className="cursor-pointer font-bold text-black rounded-[15px] text-nowrap text-sm pl-2 pr-2 tracking-widest"> log in  →</button>
+                    <Link href={"/login"} className="cursor-pointer font-bold text-black rounded-[15px] text-nowrap text-sm pl-2 pr-2 tracking-widest"> log in  →</Link>
                 </div>
                 <div id="menu" className="hidden lg:hidden absolute left-[76%] bg-white p-2 h-fit w-23 right-40 top-10 shadow">
-                    <button className="cursor-pointer font-bold text-black rounded-[15px] text-nowrap text-sm pl-2 pr-2 tracking-widest"> log in  →</button>
+                    <Link href={"/login"} className="cursor-pointer font-bold text-black rounded-[15px] text-nowrap text-sm pl-2 pr-2 tracking-widest"> log in  →</Link>
                 </div>
             </div>
 
             {/* END OF HEADER START OF INTRO */}
-            <div className="h-fit w-full bg-linear-to-br from-white to-amber-200 mt-10">
+            <div className="h-fit w-full mt-10">
+                <div className="absolute top-0 left-0-translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/30 rounded-full blur-3xl pointer-events-none"></div>
                 <div className="flex justify-center z-5 p-[20px 20px 0px 20px]">
                     <div className="text-center pt-12 pl-4 pr-4 md:pl-10 md:pr-10">
                          <p ref={headerRef} className={`${wendyOne.className} text-center text-2xl md:text-[5rem] lg:font-bold bg-linear-to-bl from-purple-700 to-green-500 bg-clip-text text-transparent transition-all duration-500 ease-in
@@ -193,6 +198,7 @@ export function HOMEPAGE(){
                         </div>
                     </div>
                 </div>
+                <div className="absolute right-0 -mt-50 w-46 h-46 bg-indigo-500/30 rounded-full blur-3xl pointer-events-none"></div>
             </div>
             <div className="bg-amber-200 h-135 w-full p-10  lg:block">
                 <div onClick={(e)=>{switchHidSlide(e)}} className={`hidSlide transition-all duration-500 ease-in m-2 absolute left-1 lg:left-70 h-110 w-45 md:w-70 pt-5 pl-10 pr-10 bg-linear-to-bl from-amber-700 to-amber-200 rounded-[20px] shadow-2xl`}>

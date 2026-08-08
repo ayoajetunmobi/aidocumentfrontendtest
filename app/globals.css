@@ -170,3 +170,9 @@ tbody tr:hover {
   background-color: #df950c; /* Modern blue bullet color */
   border: 2px solid #e2e5e6; /* White ring to separate from line */
 }
+
+.slideLogActive{
+  width: 80px;
+  transition: 5s ease-in;
+}
+
