@@ -232,7 +232,7 @@ export function HOMEPAGE(){
             </div>
 
             <div className="flex flex-wrap lg:flex-nowrap lg:gap-5">
-                <div className="absolute left-50 -translate-x-1/2 -translate-y-1/2 w-70 h-56 bg-indigo-500/30 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute right-0 w-60 h-56 bg-indigo-500/30 rounded-full blur-3xl pointer-events-none"></div>
                 <div className="w-140 h-auto">
                     <Image
                         src={"/comp.gif"}
@@ -384,7 +384,7 @@ export function HOMEPAGE(){
                         </Image>
                     </button>
                 </div>
-                <div className="absolute right-0   w-70 h-56 bg-indigo-500/30 rounded-full blur-3xl opacity-70 pointer-events-none"></div>
+                <div className="absolute right-0 w-50 h-56 bg-indigo-500/30 rounded-full blur-3xl opacity-70 pointer-events-none"></div>
             </div>
 
             
