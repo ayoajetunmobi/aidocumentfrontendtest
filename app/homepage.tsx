@@ -384,7 +384,7 @@ export function HOMEPAGE(){
                         </Image>
                     </button>
                 </div>
-                <div className="absolute right-0   w-70 h-56 bg-indigo-500/30 rounded-full blur-3xl opacity-35 pointer-events-none"></div>
+                <div className="absolute right-0   w-70 h-56 bg-indigo-500/30 rounded-full blur-3xl opacity-70 pointer-events-none"></div>
             </div>
 
             
