@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <body className={`${roboto.className}`}>
+    <div className={`${roboto.className}`}>
         {children}
-    </body>
+    </div>
   );
 }
